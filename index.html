@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       td{
+        max-width: 200px;
+       }
+
+    </style>
+  <link rel="stylesheet" crossorigin href="/assets/index-BHkwqYDt.css">
+</head>
+
+<body class="bg-cyan-950 text-white">
+    <div>
+        <h1 class="text-3xl font-semibold text-center my-3">TODOs List</h1>
+        <div class="flex justify-center">
+            <div class="w-[820px] my-2">
+                <h5 class="text-xl">Title</h5>
+                <input id="title" class="border-[#cccccc]  w-[820px] bg-cyan-950 rounded-[3px] mt-2 h-[30px] border-[1px]"
+                    type="text">
+                <p class=" my-1 text-xs">Add an item to the list</p>
+            </div>
+        </div>
+        <div class="flex justify-center">
+            <div class="w-[820px] my-2">
+                <h5 class="text-xl">Description</h5>
+                <input id="description" class="border-[#cccccc] bg-cyan-950 w-[820px] rounded-[3px] mt-2 h-[130px] border-[1px]"
+                    type="text">
+            </div>
+        </div>
+        <div class="flex justify-center">
+            <div class="w-[820px] my-2">
+                <div class="flex space-x-3">
+                <button id="add" class="border-[1px] duration-200  hover:scale-[1.04] bg-cyan-700 align-text-top text-white rounded-md py-1 px-2">Add
+                    to list</button>
+                    <button id="clear" onclick="clearStorage()" class="border-[1px] duration-200  hover:scale-[1.04] bg-cyan-700 align-text-top text-white rounded-md py-1 px-2">
+                Clear list</button>
+                </div>
+                <h1 class="text-2xl font-semibold my-3">Your items</h1>
+                <div class=" flex justify-center">
+                    <table class=" mt-3 text-center w-[82000px] ">
+                        <thead>
+                            <tr class="bg-cyan-900 text-xl">
+                                <th class="w-20 py-4">S.No</th>
+                                <th class="w-20">Item Title</th>
+                                <th class="w-20">Item Description</th>
+                                <th class="w-20">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody">
+                            <tr class="text-lg border-cyan-950 border-[1px] hover:bg-cyan-700 bg-cyan-800 duration-300  hover:scale-[1.02]">
+                                <td class="w-40 py-4">1</td>
+                                <td class="w-40">you need coffey</td>
+                                 <td class="w-40">you need coffy as you are a coder</td>
+                                <td class="w-40"><button class="border-[1px] duration-200  hover:scale-[1.04] bg-cyan-700 align-text-top text-white rounded-md text-lg px-2">Delete</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <script src="index.js"></script>
+</body>
+
+</html>
